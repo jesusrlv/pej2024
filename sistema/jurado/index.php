@@ -17,7 +17,7 @@ $categoria = $_SESSION['categoria'];
     <meta name="INJUVENTUD" content="Consejo Juvenil">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
-    <title>Perfil Jurado | PEJ2023</title>
+    <title>Perfil Jurado | PEJ2024</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -39,14 +39,14 @@ $categoria = $_SESSION['categoria'];
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      body{
+      *{
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
-        background-color: rgba(184, 11, 4, 0.8);
+        background-color: rgba(235, 58, 84, 0.9);
       }
       #imgPortrait{
-        background-image: url('../../img/fondo_pej2023.png');
+        background-image: url('../../img/fondo_pej2024.jpg');
 
         object-fit: cover;
         background-position: auto 100%; /* Center the image */
@@ -172,14 +172,14 @@ $categoria = $_SESSION['categoria'];
     <!-- <div class="row py-lg-5"  style="background-image: url('../../img/logo_consejo_05.png')"> -->
     <div class="row py-lg-5" >
       <div class="col-lg-6 col-md-8 mx-auto rounded p-2" id="colorRounded">
-        <h1 class="fw-light"><img src="../../img/PEJ23.png" alt="" width="360"></h1>
+        <h1 class="fw-light"><img src="../../img/logo_pej2024.png" alt="" width="360"></h1>
         <h2 class="fw-bold" style="color:white">Bienvenido</h2>
         <h2 class="fw-bold" style="color:white"><i class="bi bi-person-circle"></i></h2>
         <h2 class="fw-bold" style="color:white"><?php echo $nombre ?></h2>
         <?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>'?>
         <h5 class="fw-bold" style="color:white">Mesa: <output id="categoriaOut"></h5>
         <p id="resultSpan"></p>
-        <p class="lead text-light mt-2">Sistema de postulación del INJUVENTUD para integrarse al PEJ2023.</p>
+        <p class="lead text-light mt-2">Sistema de calificación del INJUVENTUD del PEJ2024.</p>
         <p>
           <hr class="text-secondary">
           <a href="#seccion_convocatoria" class="btn btn-primary my-2"><i class="bi bi-clipboard-data-fill"></i> Dashboard</a>
@@ -254,7 +254,7 @@ $categoria = $_SESSION['categoria'];
 
 </main>
 
-<footer class="text-light py-5" style="background:#b23933">
+<footer class="text-light py-5" style="background:#e4037d">
   <div class="container">
     <div>
       <div class="row">
@@ -264,7 +264,7 @@ $categoria = $_SESSION['categoria'];
           <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
         </div>
         <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
-          <img src="../../img/logo_white_01.png" width="180" alt="">
+          <img src="../../img/logo_pej2024.png" width="180" alt="">
         </div>
         <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
           <p class="float-end mb-1 text-center">

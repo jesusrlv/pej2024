@@ -1,7 +1,7 @@
 <?php
 
     $servername="localhost";
-    $database="p23"; //solo se quitó para conexión remota
+    $database="p24"; //solo se quitó para conexión remota
     $username="root";
     $password="";
 
