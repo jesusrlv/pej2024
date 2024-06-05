@@ -16,7 +16,7 @@ $perfil = $_SESSION['perfil'];
     <meta name="INJUVENTUD" content="PEJ24">
     <meta name="" content="">
     <link rel="icon" type="image/png" href="../../img/icon.ico" sizes="22x21">
-    <title>Perfil Admin | PEJ2024</title>
+    <title>Perfil Notario | PEJ2024</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
@@ -39,7 +39,7 @@ $perfil = $_SESSION['perfil'];
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      body{
+       *{
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
@@ -156,11 +156,11 @@ $perfil = $_SESSION['perfil'];
     
   <header>
 <span id="inicio"></span>
-  <div class="navbar navbar-dark shadow-sm bg-dark text-light" style="background: #FAD40D;color:white">
+  <div class="navbar navbar-dark shadow-sm bg-primary text-light" style="background: #FAD40D;color:white">
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <img src="../../img/logo_injuventud_0.png" width="20" alt="" class="me-1">
-        <strong class="text-light" id="texto_">ADMINISTRADOR | Consejo Juvenil 2024</strong>
+        <strong class="text-light" id="texto_">NOTARIO PÚBLICO | Consejo Juvenil 2024</strong>
       </a>
       <a href="prcd/sort.php" type="button" class="btn btn-sm btn-outline-light"><i class="bi bi-door-open"></i> Salir</a>
     </div>
@@ -173,7 +173,7 @@ $perfil = $_SESSION['perfil'];
     <!-- <div class="row py-lg-5"  style="background-image: url('../../img/logo_consejo_05.png')"> -->
     <div class="row py-lg-5" >
       <div class="col-lg-6 col-md-8 mx-auto rounded p-2" id="colorRounded">
-      <h1 class="fw-light p-3"><img src="../../img/logo_pej2024.png" alt="" width="360"></h1>
+        <h1 class="fw-light p-3"><img src="../../img/logo_pej2024.png" alt="" width="360"></h1>
         <h2 class="fw-bold" style="color:white">Bienvenido</h2>
         <h2 class="fw-bold" style="color:white"><i class="bi bi-person-circle"></i></h2>
         <h2 class="fw-bold" style="color:white"><?php echo $nombre ?></h2>
@@ -189,7 +189,11 @@ $perfil = $_SESSION['perfil'];
 
   <div class="album py-5 bg-light">
     <div class="container">
-    <nav class="navbar bg-body-tertiary">
+	<div class="alert alert-primary" role="alert">
+	  <h2 class="text-center">Perfil de Notario Público</h2>
+	</div>
+    <hr>
+    <nav class="navbar bg-body-tertiary" hidden>
       <form class="container-fluid justify-content-start">
         <a href="completados.php" class="btn btn-outline-success me-2" type="button"><i class="bi bi-check-circle-fill"></i> Completados</a>
         <a href="no_completados.php" class="btn btn-sm btn-outline-danger" type="button"><i class="bi bi-x-circle-fill"></i> No completados</a>
@@ -198,7 +202,7 @@ $perfil = $_SESSION['perfil'];
       <div class="mb-4">
         <p><span id="seccion_MX"></span>
           <p class="h2">
-          <i class="bi bi-flag-fill text-success"></i> Postulantes General | 
+          <i class="bi bi-flag-fill text-success"></i> Postulantes expediente completo | 
               <a href="#inicio">
                 <i class="bi bi-arrow-bar-up"></i>
               </a>
@@ -208,29 +212,14 @@ $perfil = $_SESSION['perfil'];
       </div>
       
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="input-group mb-3">
+      <div class="input-group mb-3" hidden>
         <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
         <input type="text" class="form-control" placeholder="Buscar ..." aria-label="Buscar ..." aria-describedby="basic-addon1" id="myInput">
       </div>
-        <!-- <table class="table">
-          <thead class="text-light text-center" style="background:#b23933">
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">CURP</th>
-              <th scope="col">Edad</th>
-              <th scope="col">Municipio</th>
-              <th scope="col">Teléfono</th>
-              <th scope="col"># Documentos</th>
-              <th scope="col">Calificaciones</th>
-            </tr>
-          </thead>
-          <tbody class="text-center" id="myTable"> -->
+
             <?php
-            include('query/lista_postulantes_general2.php');
+            include('query/lista_postulantes_completados2.php');
             ?>
-          </tbody>
-        </table>
        
       </div><!-- row -->
     </div>
@@ -262,7 +251,6 @@ $perfil = $_SESSION['perfil'];
   </div>
 </footer>
 
-    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>
@@ -297,3 +285,4 @@ $(document).ready(function () {
 </script>
 
 <!-- modal datos visualizar -->
+

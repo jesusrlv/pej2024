@@ -202,6 +202,19 @@ $(document).ready(function() {
                         footer: 'INJUVENTUD'
                     }).then(function(){window.location='sistema/migrante/index.php';});
                 }
+                else if (jsonData.success == "4")
+                {
+                    // location.href = 'my_profile.php';
+                    Swal.fire({
+                        icon: 'success',
+                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageHeight: 200,
+                        title: 'Usuario Notario correcto',
+                        text: 'Credenciales correctas',
+                        confirmButtonColor: '#3085d6',
+                        footer: 'INJUVENTUD'
+                    }).then(function(){window.location='sistema/notario/index.php';});
+                }
                 else
                 {
                     // alert('Invalid Credentials!');

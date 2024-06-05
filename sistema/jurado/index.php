@@ -160,7 +160,7 @@ $categoria = $_SESSION['categoria'];
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <img src="../../img/logo_injuventud_0.png" width="20" alt="" class="me-1">
-        <strong>JURADO | PEJ 2023</strong>
+        <strong>JURADO | PEJ 2024</strong>
       </a>
       <a href="prcd/sort.php" type="button" class="btn btn-sm btn-outline-light"><i class="bi bi-door-open"></i> Salir</a>
     </div>
