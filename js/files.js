@@ -133,7 +133,7 @@ function uploadVideo(idDoc,idUsr){
 
           Swal.fire({
             icon: 'success',
-            imageUrl: '../../img/logo_injuventud_01.png',
+            imageUrl: '../../img/logo_pej2024.png',
             imageHeight: 200,
             title: 'Video cargado',
             text: 'Proceso correcto',
@@ -176,7 +176,7 @@ function editVideo(idDoc,idUsr){
   
             Swal.fire({
               icon: 'success',
-              imageUrl: '../../img/logo_injuventud_01.png',
+              imageUrl: '../../img/logo_pej2024.png',
               imageHeight: 200,
               title: 'Video actualizado',
               text: 'Proceso correcto',
@@ -188,7 +188,7 @@ function editVideo(idDoc,idUsr){
         else{
             Swal.fire({
               icon: 'error',
-              imageUrl: '../../img/logo_injuventud_01.png',
+              imageUrl: '../../img/logo_pej2024.png',
               imageHeight: 200,
               title: 'Video no actualizado',
               text: 'Proceso incorrecto',
@@ -209,7 +209,7 @@ function contador(){
   if(cont == 0){
     Swal.fire({
       icon: 'info',
-      imageUrl: '../../img/logo_injuventud_01.png',
+      imageUrl: '../../img/logo_pej2024.png',
       imageHeight: 200,
       title: 'Bienvenido al sistema de postulación al PEJ2023',
       text: 'No has cargado documentos para postularte al PEJ2023, comienza a subir tus documentos.',
@@ -221,7 +221,7 @@ function contador(){
   else if(cont >= 0 & cont < 11){
     Swal.fire({
       icon: 'warning',
-      imageUrl: '../../img/logo_injuventud_01.png',
+      imageUrl: '../../img/logo_pej2024.png',
       imageHeight: 200,
       title: 'Tienes documentos pendientes por cargar',
       html: 'Has cargado <b>'+cont+'</b> documento(s) para postularte al PEJ2023.',
@@ -236,7 +236,7 @@ function contador(){
 
     Swal.fire({
       icon: 'success',
-      imageUrl: '../../img/logo_injuventud_01.png',
+      imageUrl: '../../img/logo_pej2024.png',
       imageHeight: 200,
       title: 'Proceso finalizado',
       html: 'Has cargado los <strong>11 documentos</strong> para postularte al <strong>PEJ2023</strong>. Ya puedes descargar la constancia de participación en la sección de Convocatoria.',

@@ -229,7 +229,7 @@ $categoria = $_SESSION['categoria'];
 
        
       <table class="table">
-          <thead class="text-light text-center" style="background:#b23933">
+          <thead class="text-light text-center" style="background:#e4037d">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Nombre</th>

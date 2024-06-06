@@ -155,7 +155,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
                         title: 'Usuario correcto',
                         text: 'Credenciales correctas',
@@ -168,7 +168,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
                         title: 'Usuario Admin correcto',
                         text: 'Credenciales correctas',
@@ -181,7 +181,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
                         title: 'Usuario Jurado correcto',
                         text: 'Credenciales correctas',
@@ -194,7 +194,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
                         title: 'Usuario Migrtante correcto',
                         text: 'Credenciales correctas',
@@ -207,7 +207,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
                         title: 'Usuario Notario correcto',
                         text: 'Credenciales correctas',
@@ -296,7 +296,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
                         title: 'Registro exitoso',
                         text: 'Bienvenido(a) al Sistema de Postulación PEJ2023',
@@ -385,7 +385,7 @@ $(document).ready(function() {
                     // location.href = 'my_profile.php';
                     Swal.fire({
                         icon: 'success',
-                        imageUrl: 'img/logo_injuventud_01.png',
+                        imageUrl: 'img/logo_pej2024.png',
                         imageHeight: 200,
                         title: 'Registro exitoso (Migrante)',
                         text: 'Bienvenido(a) al Sistema de Postulación',

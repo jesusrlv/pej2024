@@ -39,7 +39,7 @@ $perfil = $_SESSION['perfil'];
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      body{
+      *{
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{

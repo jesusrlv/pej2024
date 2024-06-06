@@ -43,14 +43,14 @@ include('query/name.php');
     <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      body{
+     *{
         font-family: 'Montserrat', sans-serif;
       }
       #colorRounded{
-        background-color: rgba(184, 11, 4, 0.8);
+        background-color: rgba(235, 58, 84, 0.9);
       }
       #imgPortrait{
-        background-image: url('../../img/fondo_pej2023.png');
+        background-image: url('../../img/fondo_pej2024.jpg');
 
         object-fit: cover;
         background-position: auto 100%; /* Center the image */
@@ -164,7 +164,7 @@ include('query/name.php');
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
         <img src="../../img/logo_injuventud_0.png" width="20" alt="" class="me-1">
-        <strong>JURADO | PEJ 2023</strong>
+        <strong>JURADO | PEJ 2024</strong>
       </a>
       <a href="prcd/sort.php" type="button" class="btn btn-sm btn-outline-light"><i class="bi bi-door-open"></i> Salir</a>
     </div>
@@ -185,7 +185,7 @@ include('query/name.php');
         <?php echo '<input type="text" value="'.$categoria.'" id="catCompleto" hidden>'?>
         <h5 class="fw-bold" style="color:white">Mesa: <output id="categoriaOut"></h5>
         <p id="resultSpan"></p>
-        <p class="lead text-light mt-2">Sistema de postulación del INJUVENTUD para integrarse al Consejo Juvenil del Estado de Zacatecas en su edición 2023.</p>
+        <p class="lead text-light mt-2">Sistema de postulación del INJUVENTUD para integrarse al Consejo Juvenil del Estado de Zacatecas en su edición 20224.</p>
         <p>
           <hr class="text-secondary">
           <a href="#seccion_convocatoria" class="btn btn-primary my-2"><i class="bi bi-clipboard-data-fill"></i> Dashboard</a>
@@ -214,7 +214,7 @@ include('query/name.php');
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
        
       <table class="table">
-          <thead class="text-light text-center" style="background:#b23933">
+          <thead class="text-light text-center" style="background:#e4037d">
             <tr>
               <th scope="col">#</th>
               <th scope="col">Documento</th>
@@ -240,16 +240,27 @@ include('query/name.php');
 
 </main>
 
-<footer class="text-light py-5" style="background:#b23933">
+<footer class="text-light py-5" style="background:#e4037d">
   <div class="container">
-    <p class="float-end mb-1">
-      <a href="#inicio"  style="text-decoration: none;" class="text-light"><i class="bi bi-arrow-bar-up"></i> Arriba</a>
-    </p>
-    <p class="mb-1">&copy; Desarrollo por <strong class="text-light">INJUVENTUD</strong></p>
-    <p class="mb-0"><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</p>
+    <div>
+      <div class="row">
+        <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
+          <p class="mb-0 text-center"><img src="../../img/logo_white_02.png"  width="180" alt=""></p>
+          <p class="mb-0 mt-1 text-center"><small>&copy; Desarrollo:<br> <strong class="text-light">Tecnologías de la Información | INJUVENTUD</strong></small></p>
+          <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
+        </div>
+        <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
+          <img src="../../img/logo_pej2024.png" width="180" alt="">
+        </div>
+        <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
+          <p class="float-end mb-1 text-center">
+            <a href="#inicio" style="text-decoration: none;" class="text-light"><i class="bi bi-arrow-bar-up"></i> Arriba</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
-
     <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
   </body>
