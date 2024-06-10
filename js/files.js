@@ -249,7 +249,7 @@ function contador(){
 
 function categoriaCompleta(){
   var categoria = document.getElementById('catCompleto').value;
-  console.log(categoria+'este este el valor')
+  console.log(categoria+' este este el valor')
   $.ajax({
     type: "POST",
     url: 'query/categoria_titulo.php',

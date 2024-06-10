@@ -27,6 +27,7 @@ $categoria = $_SESSION['categoria'];
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
     <script src="../../js/files.js"></script>
+    <script src="../../js/jur.js"></script>
     <!-- <script src="../../js/index.js"></script> -->
 
      <!-- type font -->
@@ -152,7 +153,7 @@ $categoria = $_SESSION['categoria'];
 
     
   </head>
-  <body onload="categoriaCompleta();">
+  <body onload="categoriaCompleta();criterios(<?php echo $categoria ?>)">
     
 <header>
 <span id="inicio"></span>
@@ -252,33 +253,82 @@ $categoria = $_SESSION['categoria'];
     </div>
   </div>
 
-</main>
+  
+  </main>
+  
+  <footer class="text-light py-5" style="background:#e4037d">
+    <div class="container">
+      <div>
+        <div class="row">
+          <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
+            <p class="mb-0 text-center"><img src="../../img/logo_white_02.png"  width="180" alt=""></p>
+            <p class="mb-0 mt-1 text-center"><small>&copy; Desarrollo:<br> <strong class="text-light">Tecnologías de la Información | INJUVENTUD</strong></small></p>
+            <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
+            </div>
+            <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
+              <img src="../../img/logo_pej2024.png" width="180" alt="">
+              </div>
+              <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
+                <p class="float-end mb-1 text-center">
+                  <a href="#inicio" style="text-decoration: none;" class="text-light"><i class="bi bi-arrow-bar-up"></i> Arriba</a>
+                  </p>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </footer>
+                  
+                  <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+                  
+                  </body>
+                  
+  <!-- Modal -->
+  <div class="modal fade" id="criteriosCalificacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Criterios de calificación</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <ol>
+          <li class="fw-bold">Cumplimiento de Requisitos de Elegibilidad:</li>
+          <ul>
+            <li>Verificación de que los participantes tengan entre 12 y 29 años de edad.</li>
+            <li>Comprobación de residencia en el Estado de Zacatecas.</li>
+            <li>Confirmación de que los participantes no sean servidores públicos.</li>
+            <li>Revisión de la documentación presentada, asegurando que cumpla con los requisitos de la convocatoria.</li>
+          </ul>
+          <li class="fw-bold">Impacto y Relevancia:</li>
+          <ul>
+            <li>Evaluación del impacto social, económico, cultural o ambiental de las acciones y proyectos de los participantes.</li>
+            <li>Análisis de cómo las contribuciones de los participantes han beneficiado a la comunidad zacatecana.</li>
+          </ul>
+          <li class="fw-bold">Originalidad e Innovación:</li>
+          <ul>
+            <li>Consideración de la originalidad y creatividad de los proyectos, investigaciones o acciones realizadas por los jóvenes.</li>
+            <li>Evaluación de la capacidad de los participantes para generar ideas innovadoras y aplicarlas efectivamente.</li>
+          </ul>
+          <li class="fw-bold">Sostenibilidad y Viabilidad:</li>
+          <ul>
+            <li>Análisis de la viabilidad y sostenibilidad de los proyectos presentados.</li>
+            <li>Evaluación de la capacidad de los proyectos para mantenerse en el tiempo y generar un impacto duradero.</li>
+          </ul>
+          <li class="fw-bold">Compromiso y Dedicación:</li>
+          <ul>
+            <li>Evaluación del nivel de compromiso y dedicación mostrado por los participantes en sus actividades y proyectos.</li>
+            <li>Consideración de la trayectoria y esfuerzo continuo de los participantes en su área de influencia.</li>
+          </ul>
+        </ol>
 
-<footer class="text-light py-5" style="background:#e4037d">
-  <div class="container">
-    <div>
-      <div class="row">
-        <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
-          <p class="mb-0 text-center"><img src="../../img/logo_white_02.png"  width="180" alt=""></p>
-          <p class="mb-0 mt-1 text-center"><small>&copy; Desarrollo:<br> <strong class="text-light">Tecnologías de la Información | INJUVENTUD</strong></small></p>
-          <!-- <p class="mb-0 text-center"><small><a href="/" style="text-decoration: none;" class="text-light">Gobierno del estado de Zacatecas</a>.</small></p> -->
         </div>
-        <div class="col-sm-3 col-md-6 col-lg-4 mt-2 text-center">
-          <img src="../../img/logo_pej2024.png" width="180" alt="">
-        </div>
-        <div class="col-sm-3 col-md-6 col-lg-4 mt-2">
-          <p class="float-end mb-1 text-center">
-            <a href="#inicio" style="text-decoration: none;" class="text-light"><i class="bi bi-arrow-bar-up"></i> Arriba</a>
-          </p>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
   </div>
-</footer>
 
-    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-  </body>
 </html>
 
 <script>
