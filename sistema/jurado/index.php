@@ -284,10 +284,10 @@ $categoria = $_SESSION['categoria'];
                   
   <!-- Modal -->
   <div class="modal fade" id="criteriosCalificacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Criterios de calificación</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-pencil-fill"></i> Criterios de calificación</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -319,6 +319,22 @@ $categoria = $_SESSION['categoria'];
             <li>Evaluación del nivel de compromiso y dedicación mostrado por los participantes en sus actividades y proyectos.</li>
             <li>Consideración de la trayectoria y esfuerzo continuo de los participantes en su área de influencia.</li>
           </ul>
+        </ol>
+
+        <p><strong>Criterios Específicos por Categoría</strong></p>
+        <p id="criteriosCategoria"></p>
+        
+        <p><strong>Criterios Adicionales</strong></p>
+        <ol>
+          <li class="fw-bold">Transparencia y Equidad:</li>
+          <ul>
+            <li>Asegurarse de que los recursos públicos se utilicen de manera imparcial, sin influir en la equidad de la competencia.</li>
+          </ul>
+          <li class="fw-bold">Prioridad a la Paz Social:</li>
+          <ul>
+            <li>Dar prioridad a los proyectos que promuevan la paz social y la convivencia armoniosa en la comunidad.</li>
+          </ul>
+          
         </ol>
 
         </div>
