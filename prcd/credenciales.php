@@ -14,12 +14,22 @@ require 'email/prcd/email/PHPMailer.php';
 require 'email/prcd/email/SMTP.php';
 
 $email = $_POST['email'];
-$sql ="SELECT * FROM usr WHERE usr = '$email'";
-$resultadoSql = $conn -> query($sql);
-$rowSql = $resultadoSql->fetch_assoc();
-$no_resultados = mysqli_num_rows($resultadoSql);
+// $sql ="SELECT * FROM usr WHERE usr = '$email'";
+// $resultadoSql = $conn -> query($sql);
+// $rowSql = $resultadoSql->fetch_assoc();
+// $no_resultados = mysqli_num_rows($resultadoSql);
 
-
+//código saneado 
+$stmt = $conn->prepare("SELECT * FROM usr WHERE usr = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $resultadoSql = $stmt->get_result();
+    $rowSql = $resultadoSql->fetch_assoc();
+    $no_resultados = $resultadoSql->num_rows;
+    
+    // Cerrar la sentencia y la conexión
+    $stmt->close();
+    $conn->close();
 
 // if(!empty($rowSql['email'])){
 if($no_resultados == 1){
@@ -43,14 +53,14 @@ if($no_resultados == 1){
         $mail->Port = 587;                                    // TCP port to connect to 587 465
         
             //Recipients
-            $mail->setFrom('injuventud@zacatecas.gob.mx', 'PREMIO ESTATAL DE LA JUVENTUD 2023 - INJUVENTUD');
+            $mail->setFrom('injuventud@zacatecas.gob.mx', 'PREMIO ESTATAL DE LA JUVENTUD 2024 - INJUVENTUD');
             $mail->addAddress($email, $nombre);     // Add a recipient
         
             // Content
             $mail->isHTML(true);
             $mail->CharSet = 'UTF-8';                                  // Set email format to HTML
             $mail->Subject = 'Recuperar credenciales';
-            $mail->Body    = '<p>El presente correo es para recuperar tus credenciales de acceso al sistema del Premio Estatal de la Juventud 2023.</p>
+            $mail->Body    = '<p>El presente correo es para recuperar tus credenciales de acceso al sistema del Premio Estatal de la Juventud 2024.</p>
             
             <p>Usuario: '.$email.'</p>
             <p>Contraseña: '.$pwd.'</p>

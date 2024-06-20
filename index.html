@@ -261,18 +261,11 @@
           </div>
           <div class="form-text" id="basic-addon4">Se enviará un correo electrónico para recuperar tu contraseña.</div>
         </div>
-        
-
-        <!-- <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
-          <form action="prcd/credenciales.php" method="post">
-          <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="Correo electrónico" aria-describedby="basic-addon1" name="email" required>
-          <div id="emailHelp" class="form-text text-black">Se enviará un correo electrónico para recuperar tu contraseña.</div>
-        </div> -->
+  
       </div>
       <div class="modal-footer bg-light">
         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i> Cerrar</button>
-        <button type="submit" class="btn btn-outline-primary"><i class="bi bi-envelope-check"></i> Recuperar</button>
+        <button type="submit" onclick="timer()" class="btn btn-outline-primary"><i class="bi bi-envelope-check"></i> Recuperar</button>
       
       </div>
     </form>
@@ -282,13 +275,29 @@
 
 <!-- zona modal's -->
 
-<!-- <script>
-  $(document).ready(function () {
-      $("#curp").on("keyup", function () {
-          var value = $(this).val().toLowerCase();
-          $("#curp tr").filter(function () {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-          });
-      });
-  });
-</script> -->
+<script>
+  function timer() {
+    let timerInterval;
+    Swal.fire({
+      title: "En proceso",
+      html: "Enviando correo en <b></b> millisegundos.",
+      timer: 9000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const timer = Swal.getPopup().querySelector("b");
+        timerInterval = setInterval(() => {
+          timer.textContent = `${Swal.getTimerLeft()}`;
+        }, 100);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      }
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log("I was closed by the timer");
+      }
+    });
+  }
+</script>

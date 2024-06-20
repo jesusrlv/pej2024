@@ -54,7 +54,7 @@ $pdf->Ln();
 $pdf->SetFont('Arial','B',10);
 $pdf->Cell(0,12,utf8_decode('Estimado(a) participante, '.$nombre.' '),0,1);
 $pdf->SetFont('Arial','',10);
-$pdf->Multicell(190,9,utf8_decode('Por medio de la presente, el Instituto de la Juventud del Estado de Zacatecas, a través de su Director General, el Ing. Mauricio Acevedo Rodríguez, reconoce a usted su participación como candidato(a) a recibir el Premio Estatal de la Juventud en su edición 2023.
+$pdf->Multicell(190,9,utf8_decode('Por medio de la presente, el Instituto de la Juventud del Estado de Zacatecas, a través de su Director General, el Ing. Mauricio Acevedo Rodríguez, reconoce a usted su participación como candidato(a) a recibir el Premio Estatal de la Juventud en su edición 2024.
 
 Su postulación es fundamental para la construcción de un Estado más próspero, incluyente, democrático e igualitario. Gracias a su intervención, recordamos lo importante que es reconocer el talento y la trayectoria de las y los jóvenes en nuestra entidad. Los principios rectores de la Nueva Gobernanza, nos obligan a impulsar y generar los espacios oportunos para que las juventudes puedan alcanzar sus objetivos, desarrollarse de manera integral y vivir en bienestar. No sólo representas uno de los cimientos más importantes de la sociedad, también eres protagonista del presente y agente estratégico para la transformación nacional.
 
@@ -74,7 +74,7 @@ DEL ESTADO DE ZACATECAS',0,'C',0);
 
 // $pdf->Output();
 $modo="I";
-$nombre_archivo="constancia_PEJ2023_".$usuario.".pdf";
+$nombre_archivo="constancia_PEJ2024_".$usuario.".pdf";
 $pdf->Output($nombre_archivo,$modo);  
 
 ?>

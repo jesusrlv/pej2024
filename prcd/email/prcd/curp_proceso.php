@@ -82,7 +82,7 @@ try {
     $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('injuventud@zacatecas.gob.mx', 'PEJ2022 - INJUVENTUD');
+    $mail->setFrom('injuventud@zacatecas.gob.mx', 'PEJ2024 - INJUVENTUD');
     $mail->addAddress($email, $nombre);     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');

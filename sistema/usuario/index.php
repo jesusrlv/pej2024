@@ -233,7 +233,7 @@ $categoria = $_SESSION['categoria'];
               
             </div>
             <div class="card-footer">
-              <a href="https://juventud.zacatecas.gob.mx/docs/convocatoria_premio_2023.pdf" target="_blank" class="card-link" style="text-decoration: none"><i class="bi bi-eye"></i> Revisar</a>
+              <a href="https://juventud.zacatecas.gob.mx/docs/convocatoria_pej2024.pdf" target="_blank" class="card-link" style="text-decoration: none"><i class="bi bi-eye"></i> Revisar</a>
             </div>
           </div>
         </div>
