@@ -190,16 +190,83 @@ $perfil = $_SESSION['perfil'];
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="alert alert-light" role="alert">
-    <p class="text-center fs-1 text-secondary"><i class="bi bi-menu-up"></i><br> Menú</p>
+    <p class="text-center fs-1 text-secondary"><i class="bi bi-houses-fill"></i> Inicio Premio Estatal de la Juventud</p>
     </div>
-    <div class="row p-5 mt-3 mb-3  my-auto">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">CATEGORÍAS</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">COMPLETOS</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card mt-1" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">COMPLETOS</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card mt-1" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">TOTAL</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">MUNICIPIOS</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">JURADOS</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3 mb-3 my-auto">
 
       <div class="col-md-6 mt-3">
         <a href="index_completados.php" style="text-decoration: none">
-        <div class="card bg-success text-light mx-auto" style="width: 18rem;">
-        <i class="bi bi-list-check h1 text-center mt-3"></i>
+        <div class="card bg-success text-light mx-auto" style="width: 100%;">
+        <i class="bi bi-list-check  text-center mt-3"></i>
           <div class="card-body">
-            <p class="card-text text-center fs-1">1</p>
+            <p class="card-text text-center ">1</p>
             <p class="card-text text-center">Listado completados.</p>
           </div>
         </div>
@@ -207,10 +274,10 @@ $perfil = $_SESSION['perfil'];
       </div>
       <div class="col-md-6 mt-3">
       <a href="index_no_completados.php" style="text-decoration: none">
-        <div class="card bg-danger text-light mx-auto" style="width: 18rem;">
-          <i class="bi bi-list-columns h1 text-center mt-3"></i>
+        <div class="card bg-danger text-light mx-auto" style="width: 100%;">
+          <i class="bi bi-list-columns  text-center mt-3"></i>
           <div class="card-body">
-            <p class="card-text text-center fs-1">2</p>
+            <p class="card-text text-center ">2</p>
             <p class="card-text text-center">Listado no completados.</p>
           </div>
         </div>
@@ -218,10 +285,10 @@ $perfil = $_SESSION['perfil'];
       </div>
       <div class="col-md-6 mt-3">
         <a href="index_calificaciones.php" style="text-decoration: none" class="text-dark">
-        <div class="card bg-info mx-auto" style="width: 18rem;">
-        <i class="bi bi-list-ol h1 text-center mt-3"></i>
+        <div class="card bg-info mx-auto" style="width: 100%;">
+        <i class="bi bi-list-ol  text-center mt-3"></i>
           <div class="card-body">
-            <p class="card-text text-center fs-1">3</p>
+            <p class="card-text text-center ">3</p>
             <p class="card-text text-center">Calificaciones.</p>
           </div>
         </div>
@@ -229,10 +296,10 @@ $perfil = $_SESSION['perfil'];
       </div>
       <div class="col-md-6 mt-3">
         <a href="index_general.php" style="text-decoration: none" class="text-dark">
-        <div class="card bg-warning mx-auto" style="width: 18rem;">
-        <i class="bi bi-card-list h1 text-center mt-3"></i>
+        <div class="card bg-warning mx-auto" style="width: 100%;">
+        <i class="bi bi-card-list  text-center mt-3"></i>
           <div class="card-body">
-            <p class="card-text text-center fs-1">4</p>
+            <p class="card-text text-center ">4</p>
             <p class="card-text text-center">Lista general.</p>
           </div>
         </div>
